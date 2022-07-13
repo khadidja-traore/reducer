@@ -3,6 +3,8 @@ import {Routes, Route} from 'react-router-dom'
 
 
 import './App.css';
+import { AppContainer } from './components/AppContainer/AppContainer';
+import { Button, RedButton, GreenButton, BlueButton, ButtonLabel } from './components/Button/Button.style';
 
 
 import DataFetchAllReducer from './components/DataFetchAllReducer';
@@ -44,8 +46,8 @@ function App() {
   return (
 
     
-
-    <div className="App">
+<AppContainer className='App'>
+    {/* <div className="App"> */}
       {/* Count : {count}      
       <ComponentA />
       <ComponentD />
@@ -61,6 +63,12 @@ function App() {
 
       <Navbar/>
 
+      <RedButton>Test</RedButton>
+      <BlueButton>Test</BlueButton>
+      <GreenButton><ButtonLabel>Test</ButtonLabel></GreenButton>
+      <Button backgroundcolor="yellow" backgroundHovercolor="coral" >Test</Button>
+      <Button backgroundcolor="lightblue" backgroundHovercolor="coral">Test</Button>
+  
 
       <Routes>
 
@@ -80,8 +88,8 @@ function App() {
       <DataFetchingAll />  */}
     
 
-    </div>
-
+    {/* </div> */}
+</AppContainer>
   );
 }
 
